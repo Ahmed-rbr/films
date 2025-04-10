@@ -1,4 +1,4 @@
-const apiKEY = process.env.API_KEY;
+const apiKEY = window.API_KEY;
 let currentMovies = [];
 
 async function fetchAndDisplayMovies(url) {
