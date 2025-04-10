@@ -1,9 +1,38 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <meta http-equiv="refresh" content="0; url=./src/index.html" />
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="./output.css" rel="stylesheet" />
   </head>
   <body>
-    Redirecting...
+    <header class="w-4/5 p-3 mb-6 m-auto">
+      <nav class="flex justify-between items-center">
+        <div class="relative">
+          <input
+            class="border focus:outline-0 border-blue-200 px-6 py-1 rounded-2xl"
+            type="text"
+            placeholder="Search movies..."
+            id="searchInput"
+          />
+          <button
+            class="px-4 py-1 absolute text-white text-center right-1 top-0 rounded-2xl border-0 bg-blue-400 hover:bg-blue-500 transition-colors"
+            id="searchButton"
+          >
+            Search
+          </button>
+        </div>
+      </nav>
+    </header>
+
+    <main>
+      <section class="w-4/5 m-auto">
+        <div
+          class="grid cards grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-12"
+        ></div>
+      </section>
+    </main>
+    <script src="../src/jsj.js"></script>
+    <script src="js.js"></script>
   </body>
 </html>
